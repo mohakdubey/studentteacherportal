@@ -1,0 +1,12 @@
+<?php
+	$y=$row['semester'];
+    echo "Welcome Mr.".$row['student_name']."<hr>";
+    echo "Your subjects are: <br>";
+    $result1 = mysqli_query($con,"SELECT * FROM subject where sem=$y;");
+    $row1 = mysqli_fetch_array($result1);
+    echo $row1['sub1']."<br>";
+    echo $row1['sub2']."<br>";
+    echo $row1['sub3']."<br>";
+    echo $row1['sub4']."<br>";
+    echo $row1['sub5']."<br>";
+>?
